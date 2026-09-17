@@ -1,0 +1,8 @@
+base: ../longenough.yaml
+loss:
+  lambda_supcon: 0.0
+ablation:
+  supcon_loss: false
+output:
+  experiment_name: no_supcon
+

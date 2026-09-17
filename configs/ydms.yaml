@@ -1,0 +1,8 @@
+base: base.yaml
+dataset:
+  name: ydms
+data:
+  processed_root: data/processed/ydms
+evaluation:
+  validation_protocol: random_5shot
+

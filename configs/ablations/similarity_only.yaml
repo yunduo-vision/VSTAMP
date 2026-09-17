@@ -1,0 +1,6 @@
+base: ../longenough.yaml
+matching:
+  aggregation: similarity_only
+output:
+  experiment_name: similarity_only
+

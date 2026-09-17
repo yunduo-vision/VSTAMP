@@ -1,0 +1,6 @@
+base: base.yaml
+dataset:
+  name: longenough
+data:
+  processed_root: data/processed/longenough
+

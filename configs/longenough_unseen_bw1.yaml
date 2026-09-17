@@ -1,0 +1,7 @@
+base: longenough.yaml
+dataset:
+  held_out_bandwidth: bw1
+data:
+  processed_root: data/processed/longenough_unseen_bw1
+output:
+  experiment_name: unseen_bw1

@@ -1,0 +1,6 @@
+base: ../longenough.yaml
+matching:
+  aggregation: uniform_lse
+output:
+  experiment_name: uniform_logsumexp
+

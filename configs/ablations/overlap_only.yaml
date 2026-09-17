@@ -1,0 +1,6 @@
+base: ../longenough.yaml
+matching:
+  aggregation: overlap_only
+output:
+  experiment_name: overlap_only
+

@@ -1,0 +1,9 @@
+base: ../longenough.yaml
+matching:
+  operator: diagonal
+  beta_overlap: 0.0
+loss:
+  lambda_alignment: 0.0
+output:
+  experiment_name: diagonal
+

@@ -1,0 +1,10 @@
+base: ../longenough.yaml
+matching:
+  operator: soft_dtw
+  pma_gamma: 0.10
+  beta_overlap: 0.0
+loss:
+  lambda_alignment: 0.0
+output:
+  experiment_name: soft_dtw
+

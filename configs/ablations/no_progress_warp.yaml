@@ -1,0 +1,6 @@
+base: ../longenough.yaml
+ablation:
+  progress_warp: false
+output:
+  experiment_name: no_progress_warp
+

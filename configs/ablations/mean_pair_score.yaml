@@ -1,0 +1,6 @@
+base: ../longenough.yaml
+matching:
+  aggregation: mean
+output:
+  experiment_name: mean_pair_score
+

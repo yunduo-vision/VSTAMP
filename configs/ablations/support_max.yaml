@@ -1,0 +1,6 @@
+base: ../longenough.yaml
+matching:
+  aggregation: support_max
+output:
+  experiment_name: support_max
+

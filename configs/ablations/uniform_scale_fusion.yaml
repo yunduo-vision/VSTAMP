@@ -1,0 +1,6 @@
+base: ../longenough.yaml
+ablation:
+  uniform_scale_fusion: true
+output:
+  experiment_name: uniform_scale_fusion
+

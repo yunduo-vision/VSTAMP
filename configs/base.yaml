@@ -1,0 +1,73 @@
+dataset:
+  name: longenough
+data:
+  processed_root: data/processed/longenough
+  observation_seconds: 60
+  resolutions_ms: [100, 500, 2000]
+  num_workers: 0
+model:
+  tokens: 30
+  local_dim: 256
+  global_dim: 512
+  alignment_dim: 128
+  dropout: 0.1
+matching:
+  operator: pma
+  match_offset: 0.20
+  gap_penalty: 0.10
+  pma_gamma: 0.10
+  lambda_z: 0.50
+  beta_overlap: 1.0
+  beta_similarity: 1.0
+  compatibility_temperature: 0.20
+  score_temperature: 0.10
+  episode_temperature: 0.10
+  aggregation: compatibility
+loss:
+  lambda_alignment: 0.50
+  lambda_supcon: 0.20
+  supcon_temperature: 0.07
+  alignment_sigma_seconds: 2.0
+training:
+  episodes: 30000
+  n_way: 10
+  n_shot: 2
+  n_query: 4
+  learning_rate: 0.0001
+  minimum_learning_rate: 0.000001
+  weight_decay: 0.0001
+  gradient_clip: 5.0
+  validation_interval: 500
+  checkpoint_interval: 500
+  log_interval: 25
+  mixed_precision: false
+  seeds: [0, 1, 2]
+augmentation:
+  prefix_probability: 0.5
+  prefix_min: 0.3
+  prefix_max: 1.0
+  warp_probability: 0.5
+  warp_eta_min: -0.3
+  warp_eta_max: 0.3
+evaluation:
+  validation_protocol: cross_mode
+  fixed_episodes: 300
+  correspondence_pairs: 300
+  truncation_fractions: [0.2, 0.3, 0.5, 0.7, 1.0]
+  open_set_partitions: 5
+  real_overlap_windows: 360
+  real_overlap_pairs: 540
+  bootstrap_samples: 1000
+numerics:
+  epsilon: 0.00000001
+  deterministic: true
+ablation:
+  uniform_scale_fusion: false
+  global_only: false
+  prefix_transform: true
+  progress_warp: true
+  alignment_loss: true
+  supcon_loss: true
+output:
+  root: outputs
+  experiment_name: full_vstamp

@@ -1,0 +1,8 @@
+base: ../longenough.yaml
+loss:
+  lambda_alignment: 0.0
+ablation:
+  alignment_loss: false
+output:
+  experiment_name: no_alignment_loss
+

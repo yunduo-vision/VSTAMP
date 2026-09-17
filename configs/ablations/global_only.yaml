@@ -1,0 +1,11 @@
+base: ../longenough.yaml
+ablation:
+  global_only: true
+matching:
+  aggregation: support_max
+  lambda_z: 1.0
+loss:
+  lambda_alignment: 0.0
+output:
+  experiment_name: global_only
+
